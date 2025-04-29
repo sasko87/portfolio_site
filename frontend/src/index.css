@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  --animate-typewriter: typewriter 1s steps(11) forwards;
+  --breakpoint-ml: 62.25rem;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
