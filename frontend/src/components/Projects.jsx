@@ -29,7 +29,7 @@ const Projects = () => {
           {hasMoreToShow ? (
             <button
               onClick={handleToggle}
-              className="text-rose-600 p-5 px-7 border-rose-600 border-2 cursor-pointer hover:bg-rose-200"
+              className="text-rose-600 p-5 px-7 border-rose-600 border-2 cursor-pointer hover:bg-rose-200 "
             >
               {showAll ? "Show Less" : "View All Projects"}
             </button>

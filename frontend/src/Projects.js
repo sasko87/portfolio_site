@@ -1,16 +1,16 @@
 import chatAppImg from "./assets/chatHub.png";
 import mentorTokenImg from "./assets/mentorToken.png";
 import wvpImg from "./assets/wvp.png";
+import portfolioImg from "./assets/portfolio-website.png";
 export const projects = [
   {
-    image: chatAppImg,
-    name: "Chat App",
-    dev: "Full Stack",
-    description:
-      "A responsive web application that allows you to connect with friends, family, or colleagues through real-time messaging in a sleek and secure environment",
-    tech: ["React", "Node.js", "MongoDB", "Socket.io"],
-    link: "https://chat.stevkovski.xyz",
-    github: "https://github.com/sasko87/Chat_App",
+    image: portfolioImg,
+    name: "Portfolio website",
+    dev: "Frontend",
+    description: "A responsive portfolio website ",
+    tech: ["React", "Tailwind", "Node.js"],
+    link: "https://stevkovski.xyz",
+    github: "https://github.com/sasko87/portfolio-website",
   },
   {
     image: mentorTokenImg,
@@ -23,6 +23,16 @@ export const projects = [
     github: "https://github.com/sasko87/project_mentor_token",
   },
   {
+    image: chatAppImg,
+    name: "Chat App",
+    dev: "Full Stack",
+    description:
+      "A responsive web application that allows you to connect with friends, family, or colleagues through real-time messaging in a sleek and secure environment",
+    tech: ["React", "Node.js", "MongoDB", "Socket.io"],
+    link: "https://chat.stevkovski.xyz",
+    github: "https://github.com/sasko87/Chat_App",
+  },
+  {
     image: wvpImg,
     name: "WVP website",
     dev: "Frontend",
@@ -30,6 +40,6 @@ export const projects = [
       "A responsive website designed and developed for WVP Insurance Broker to showcase their services and streamline access to insurance information.",
     tech: ["HTML", "CSS", "JavaScript"],
     link: "https://wvp.mk",
-    github: "https://github.com/sasko87/wvp-website",
+    github: "https://github.com/sasko87/WVP-insurance-website",
   },
 ];
