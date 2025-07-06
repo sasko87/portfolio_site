@@ -4,49 +4,16 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
-  const [active, setActive] = useState();
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      setActive(id);
-    }
-  };
-
-  useEffect(() => {
-    const sections = document.querySelectorAll("section"); // or your Section component
-    const options = {
-      threshold: 0.6, // 60% visible
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute("id");
-          setActive(id);
-        }
-      });
-    }, options);
-
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section);
-      });
-    };
-  }, []);
+const Nav = ({ onClick, scrollToSection, active }) => {
   return (
     <nav className="text-neutral-200 flex flex-col justify-between h-screen mt-8">
       <div className="flex-1">
-        <ul className="flex flex-col items-start justify-center ">
-          <li className="mt-1.5 text-lg ">
+        <ul className="flex flex-col items-start justify-center gap-4 text-xl ">
+          <li>
             <Link
               onClick={(e) => {
                 e.preventDefault(), scrollToSection("home");
+                if (onClick) onClick();
               }}
               className={
                 active === "home" ? "text-rose-600" : " hover:text-rose-200"
@@ -55,10 +22,11 @@ const Nav = () => {
               Home
             </Link>
           </li>
-          <li className="mt-1.5 text-lg">
+          <li>
             <Link
               onClick={(e) => {
                 e.preventDefault(), scrollToSection("about");
+                if (onClick) onClick();
               }}
               className={
                 active === "about" ? "text-rose-600" : " hover:text-rose-200"
@@ -67,10 +35,11 @@ const Nav = () => {
               About Me
             </Link>
           </li>
-          <li className="mt-1.5 text-lg ">
+          <li>
             <Link
               onClick={(e) => {
                 e.preventDefault(), scrollToSection("skills");
+                if (onClick) onClick();
               }}
               className={
                 active === "skills" ? "text-rose-600" : " hover:text-rose-200"
@@ -79,10 +48,11 @@ const Nav = () => {
               My Skills
             </Link>
           </li>
-          <li className="mt-1.5 text-lg">
+          <li>
             <Link
               onClick={(e) => {
                 e.preventDefault(), scrollToSection("projects");
+                if (onClick) onClick();
               }}
               className={
                 active === "projects" ? "text-rose-600" : " hover:text-rose-200"
@@ -91,10 +61,11 @@ const Nav = () => {
               Projects
             </Link>
           </li>
-          <li className="mt-1.5 text-lg    ">
+          <li>
             <Link
               onClick={(e) => {
                 e.preventDefault(), scrollToSection("contact");
+                if (onClick) onClick();
               }}
               className={
                 active === "contact" ? "text-rose-600" : " hover:text-rose-200"

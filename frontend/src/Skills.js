@@ -1,79 +1,79 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { FaReact } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaBootstrap } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { FaLinux } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { TbSeo } from "react-icons/tb";
+import apiImg from "../src/assets/api.png";
+import expressLogo from "../src/assets/express-js.png";
+import nodeLogo from "../src/assets/node.png";
+import mongoLogo from "../src/assets/mongodb.png";
+import seoLogo from "../src/assets/seo.png";
+import htmlLogo from "../src/assets/HTML.png";
+import cssLogo from "../src/assets/CSS3.png";
+import jsLogo from "../src/assets/JavaScript.png";
+import reactLogo from "../src/assets/react.png";
+import bootstrapLogo from "../src/assets/bootstrap.png";
+import linuxLogo from "../src/assets/linux.png";
+import gitLogo from "../src/assets/git.png";
+import githubLogo from "../src/assets/github.png";
+import tailwindLogo from "../src/assets/tailwind.png";
 
 export const frontend = [
   {
-    image: FaHtml5,
+    image: htmlLogo,
     name: "HTML",
   },
   {
-    image: FaCss3Alt,
+    image: cssLogo,
     name: "CSS",
   },
   {
-    image: IoLogoJavascript,
+    image: jsLogo,
     name: "JavaScript",
   },
   {
-    image: FaReact,
+    image: reactLogo,
     name: "React",
   },
   {
-    image: RiTailwindCssFill,
+    image: tailwindLogo,
     name: "Tailwind",
   },
   {
-    image: FaBootstrap,
+    image: bootstrapLogo,
     name: "Bootstrap",
   },
 ];
 
 export const backend = [
   {
-    image: FaNode,
+    image: nodeLogo,
     name: "Node.js",
   },
   {
-    image: SiExpress,
+    image: expressLogo,
     name: "Express js",
   },
   {
-    image: TbApi,
+    image: apiImg,
     name: "REST Api",
   },
   {
-    image: SiMongodb,
+    image: mongoLogo,
     name: "MongoDB",
   },
 ];
 
 export const otherSkills = [
   {
-    image: FaLinux,
+    image: linuxLogo,
     name: "Linux",
   },
   {
-    image: FaGitAlt,
+    image: gitLogo,
     name: "Git",
   },
   {
-    image: FaGithub,
+    image: githubLogo,
     name: "GitHub",
   },
   {
-    image: TbSeo,
+    image: seoLogo,
     name: "SEO",
   },
 ];

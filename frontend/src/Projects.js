@@ -7,7 +7,7 @@ export const projects = [
     name: "Chat App",
     dev: "Full Stack",
     description:
-      "Connect instantly with friends, family, or colleagues through real-time messaging in a sleek and secure environment",
+      "A responsive web application that allows you to connect with friends, family, or colleagues through real-time messaging in a sleek and secure environment",
     tech: ["React", "Node.js", "MongoDB", "Socket.io"],
     link: "https://chat.stevkovski.xyz",
     github: "https://github.com/sasko87/Chat_App",

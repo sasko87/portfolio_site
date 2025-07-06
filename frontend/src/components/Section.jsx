@@ -1,16 +1,14 @@
 import React from "react";
-import { FaCircleArrowUp } from "react-icons/fa6";
-import { Link } from "react-scroll";
 
-const Section = ({ children, id }) => {
+const Section = ({ children, id, className }) => {
   return (
     <section
-      className="flex min-h-fit w-screen bg-stone-950 items-center justify-center"
+      className={`flex min-h-fit h-screen bg-stone-950 items-center justify-center max-md:relative ${className}`}
       id={id}
     >
       <div className="w-1/6 h-screen max-lg:hidden"></div>
       {children}
-      <Link
+      {/* <Link
         to="#home"
         className="fixed right-5 bottom-5 flex flex-col items-center cursor-pointer"
         smooth={true}
@@ -20,7 +18,7 @@ const Section = ({ children, id }) => {
         <p className="text-neutral-200 text-xs mt-1 rounded-full">
           Scroll to top
         </p>
-      </Link>
+      </Link> */}
     </section>
   );
 };

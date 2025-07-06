@@ -1,9 +1,20 @@
 @import "tailwindcss";
 
+html {
+  overflow-x: hidden;
+}
+
 @theme {
   --animate-wiggle: wiggle 1s ease-in-out infinite;
-  --animate-typewriter: typewriter 1s steps(11) forwards;
+  --animate-typewriter: typewriter 1s steps(24) forwards;
+  --animate-flyleft: flyleft 0.5s forwards;
+  --animate-fadeShow: fadeShow 1s forwards;
+  --animate-flybottom: flybottom 0.5s forwards;
+  --animate-flyright: flyright 0.5s forwards;
+
   --breakpoint-ml: 62.25rem;
+  --breakpoint-xs: 27.5rem;
+
   @keyframes wiggle {
     0%,
     100% {
@@ -13,10 +24,46 @@
       transform: translateY(-40px);
     }
   }
-}
+  @keyframes flyleft {
+    0% {
+      transform: translateX(-500%);
+    }
 
-@keyframes typewriter {
-  to {
-    left: 100%;
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes flybottom {
+    0% {
+      transform: translateY(500%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes flyright {
+    0% {
+      transform: translateX(500%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes fadeShow {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }

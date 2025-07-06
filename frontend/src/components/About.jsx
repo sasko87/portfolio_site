@@ -7,9 +7,10 @@ import SectionTitle from "./SectionTitle";
 const About = () => {
   return (
     <Section id="about">
-      <div className="bg-stone-900 w-6/8 h-5/6 rounded-4xl flex flex-col text-neutral-100 p-15 pt-7 max-lg:w-full max-lg:m-7">
+      <div className="bg-stone-900 w-6/8 rounded-4xl flex flex-col text-neutral-100 p-15  max-lg:w-full pt-0 max-lg:mr-5 max-lg:ml-5 max-md:p-6 max-md:pt-0 ">
         <SectionTitle>About Me</SectionTitle>
-        <div className="mt-10 mb-7 text-gray-400">
+
+        <div className=" mb-7 text-gray-400">
           <h3 className="text-2xl font-bold mb-4 text-neutral-200 max-md:w-fit">
             Full Stack Web Developer with a Passion for Problem Solving
           </h3>

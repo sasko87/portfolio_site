@@ -7,13 +7,15 @@ import { frontend, backend, otherSkills } from "../Skills";
 import { GiSkills } from "react-icons/gi";
 import Container from "./Container";
 import SectionTitle from "./SectionTitle";
+import ScreenSize from "../hooks/ScreenSize";
 
 const Skills = () => {
+  const width = ScreenSize();
   return (
     <Section id="skills">
       <Container>
         <SectionTitle>My Skills</SectionTitle>
-        <div className="flex items-center justify-center flex-wrap ml-10 mr-10 max-md:ml-5 max-md:mr-5">
+        <div className="flex items-center justify-center flex-wrap gap-4 max-xl:flex-col max-xl:mb-4">
           <Card
             title="Frontend Development"
             titleIcon={<FaLaptopCode />}
@@ -25,12 +27,14 @@ const Skills = () => {
             image={backend}
           />
         </div>
-        <Card
-          horizontal
-          title={"Other skills and tools"}
-          titleIcon={<GiSkills />}
-          image={otherSkills}
-        />
+        <div className="animate-fadeShow">
+          <Card
+            horizontal={width > 1181 ? true : false}
+            title={"Other skills and tools"}
+            titleIcon={<GiSkills />}
+            image={otherSkills}
+          />
+        </div>
       </Container>
     </Section>
   );
