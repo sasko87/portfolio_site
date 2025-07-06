@@ -34,7 +34,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:3000/api/send-mail", {
+      const response = await fetch("/api/send-mail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -51,7 +51,7 @@ const Contact = () => {
       }
     } catch (error) {
       setIsError(true);
-      setServerMessage(data.error);
+      setServerMessage("Something went wrong. Please try again in a moment.");
     } finally {
       setLoading(false);
     }

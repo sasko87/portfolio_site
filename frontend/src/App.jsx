@@ -13,6 +13,17 @@ import { useState, useEffect } from "react";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState();
+
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+  }, []);
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
