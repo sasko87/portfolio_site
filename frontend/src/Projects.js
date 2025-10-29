@@ -2,6 +2,9 @@ import chatAppImg from "./assets/chatHub.png";
 import mentorTokenImg from "./assets/mentorToken.png";
 import wvpImg from "./assets/wvp.png";
 import portfolioImg from "./assets/portfolio-website.png";
+import innoweb from "./assets/innoweb.webp";
+import zdravstveno from "./assets/zdravstveno.webp";
+import taskManager from "./assets/task-manager.webp";
 export const projects = [
   {
     image: portfolioImg,
@@ -41,5 +44,32 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     link: "https://wvp.mk",
     github: "https://github.com/sasko87/WVP-insurance-website",
+  },
+  {
+    image: innoweb,
+    name: "InnoWeb",
+    dev: "Frontend",
+    description: "A responsive Landing Page ",
+    tech: ["React", "CSS", "Node.js"],
+    link: "https://innoweb.mk",
+    github: "https://github.com/sasko87/InnoWeb",
+  },
+  {
+    image: zdravstveno,
+    name: "Health Insurance",
+    dev: "Frontend",
+    description: "A responsive Landing Page for Health Insurance",
+    tech: ["React", "CSS", "Node.js"],
+    link: "https://zdravstveno.stevkovski.xyz",
+    github: "https://github.com/sasko87/health-insurance-website",
+  },
+  {
+    image: taskManager,
+    name: "Project Manager App",
+    dev: "Full Stack",
+    description: "A responsive Landing Page for Health Insurance",
+    tech: ["React", "MongoDb", "Node.js"],
+    link: "https://tasks.stevkovski.xyz",
+    github: "https://github.com/sasko87/management-app",
   },
 ];
