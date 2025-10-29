@@ -3,7 +3,7 @@ name: Deploy Vite to OrangeHost via FTP
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy:
